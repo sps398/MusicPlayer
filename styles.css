@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dangrek', cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(2, 2, 63);
+    overflow: hidden;
+}
+
+.nav h1 {
+    width: 50%;
+    margin: 0;
+    color: #FEAC4C;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 0.7rem 0 0.5rem 13rem;
+}
+
+.container {
+    width: 100vw;
+    height: 78vh;
+    background-image: url("./bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    overflow: hidden;
+    flex: 1;
+    align-items: center;
+}
+
+.player {
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(2, 2, 63);
+    color: #FEAC4C;
+    overflow: hidden;
+}
+
+.actions {
+    color: #FEAC4C;     
+    display: flex;
+    justify-content: center;
+    margin-top: 0.3rem;
+}
+
+.action {
+    margin: 0 0.7rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.pb-container {
+    margin-top: 1rem;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+#progress-bar {
+    width: 40%;
+    cursor: pointer;
+}
+
+.list {
+    width: 50%;
+    height: 98%;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.song-item {
+    width: 100%;
+    height: 9%;
+    background-color: rgb(2, 2, 63);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.song-item:hover {
+    background-color: rgb(4, 4, 93);
+    cursor: pointer;
+}
+
+.song-item:active {
+    color: green;
+}
+
+.song-name {
+    width: 72%;
+    text-align: center;
+}
+
+.duration {
+    width: 10%;
+}
+
+.cover {
+    width: 10%;
+    height: 100%;
+    padding: 0.1rem;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+}
+
+.sr-no {
+    width: 8%;
+    padding-left: 1rem;
+}
+
+.bottom {
+    width: 100%;
+}
+
+.cs-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center     ;
+    position: absolute;
+    bottom: 0.8rem;
+    left: 2rem;
+}
+
+.anim {
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+}
+
+.anim img {
+    width: 100%;
+    height: 100%;
+}
+
+#curr-wrapper {
+    width: 30rem;
+    height: 2rem;
+    display: inline-block;
+    position: relative;
+    bottom: -0.1rem;
+    left: 1rem;
+    color: white;
+    font-size: 1.3rem;
+    overflow: hidden;
+}
+
+#curr {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav {
+        line-height: 10vh;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .nav h1 {
+        width: 100%;
+        vertical-align: middle;
+        padding: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    .container {
+        height: 70vh;
+    }
+
+    .list {
+        width: 100%;
+        padding: 0 10%;
+        margin: 0 auto;
+        min-height: max-content;
+
+        display: block;
+        overflow-y: scroll;
+    }
+
+    .player {
+        height: max(133px, 20vh);
+        position: fixed;
+        bottom: 0;
+        background-color: black;
+    }
+
+    .cs-container {
+        width: 80%;
+        bottom: 1rem;
+    }
+
+    #progress-bar {
+        width: 80%;
+    }
+
+    .song-item {
+        margin-top: 1rem;
+    }
+
+    #curr-wrapper {
+        width: 100%;
+    }
+
+    .sr-no {
+        padding-left: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .list {
+        font-size: 1rem;
+    }
+
+    .sr-no {
+        visibility: collapse;
+        width: 0;
+        padding: 0;
+    }
+
+    .song-item {
+        justify-content: space-between;
+        overflow: scroll;
+    }
+
+    .song-name {
+        width: 80%;
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .anim {
+        width: 1rem;
+        height: 1rem;
+        position: relative;
+        bottom: 0.4rem;
+    }
+
+    #curr-wrapper {
+        font-size: 1rem;
+    }
+}

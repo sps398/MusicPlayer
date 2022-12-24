@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dangrek&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4f9275b3db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="nav">
+        <h1 id="title">#Music for life</h1>
+    </div>
+    <div class="container">
+        <div class="list">
+            <div class="song-item" id="1">
+                <span class="sr-no">1</span>
+                <span class="cover"><img src="./covers/1.jpg" alt="1"></span>
+                <span class="song-name">Chahe-Dukh-Ho-Chahe-Sukh-Ho</span>
+                <span class="duration">05:36</span>
+            </div>
+            <div class="song-item" id="2">
+                <span class="sr-no">2</span>
+                <span class="cover"><img src="./covers/2.jpg" alt="2"></span>
+                <span class="song-name">Jim’s-Theme</span>
+                <span class="duration">01:11</span>
+            </div>
+            <div class="song-item" id="3">
+                <span class="sr-no">3</span>
+                <span class="cover"><img src="./covers/3.jpg" alt="3"></span>
+                <span class="song-name">Jo-Tum-Na-Ho</span>
+                <span class="duration">03:10</span>
+            </div>
+            <div class="song-item" id="4">
+                <span class="sr-no">4</span>
+                <span class="cover"><img src="./covers/4.jpg" alt="4"></span>
+                <span class="song-name">Tere-Naina</span>
+                <span class="duration">04:36</span>
+            </div>
+            <div class="song-item" id="5">
+                <span class="sr-no">5</span>
+                <span class="cover"><img src="./covers/5.jpg" alt="5"></span>
+                <span class="song-name">Teri-Galiyon-Se</span>
+                <span class="duration">04:36</span>
+            </div>
+            <div class="song-item" id="6">
+                <span class="sr-no">6</span>
+                <span class="cover"><img src="./covers/6.jpg" alt="6"></span>
+                <span class="song-name">Tod-Lage-Jatt-Nu</span>
+                <span class="duration">04:04</span>
+            </div>
+            <div class="song-item" id="7">
+                <span class="sr-no">7</span>
+                <span class="cover"><img src="./covers/7.jpg" alt="7"></span>
+                <span class="song-name">Tu-Itna-Zaroori-Kaise-Hua</span>
+                <span class="duration">04:14</span>
+            </div>
+            <div class="song-item" id="8">
+                <span class="sr-no">8</span>
+                <span class="cover"><img src="./covers/8.jpg" alt="8"></span>
+                <span class="song-name">Tu-Mila-To-Khuda-Ka-Sahara-Mil-Gaya</span>
+                <span class="duration">03:59</span>
+            </div>
+            <div class="song-item" id="9">
+                <span class="sr-no">9</span>
+                <span class="cover"><img src="./covers/9.jpg" alt="9"></span>
+                <span class="song-name">Yaadon-Mein-Teri</span>
+                <span class="duration">06:27</span>
+            </div>
+            <div class="song-item" id="10">
+                <span class="sr-no">10</span>
+                <span class="cover"><img src="./covers/10.jpg" alt="10"></span>
+                <span class="song-name">Zoom-Boom-Doom-Pathan</span>
+                <span class="duration">03:22</span>
+            </div>
+        </div>
+    </div>
+    <div class="player">
+        <div class="pb-container">
+            <input type="range" value="0" max="100" id="progress-bar">
+        </div>
+        <div class="actions">
+            <span class="action"><i id="a-prev" class="fa-solid fa-backward-step"></i></span>
+            <span class="action"><i id="a-pp" class="fa-solid fa-play"></i></span>
+            <span class="action"><i id="a-next" class="fa-solid fa-forward-step"></i></span>
+        </div>
+    </div>
+    <div class="cs-container">
+        <div class="anim">
+            <img src="./anim_still.png" alt="anim" id="animation">
+        </div>
+        <div id="curr-wrapper">
+            <p id="curr">
+                Chahe-Dukh-Ho-Chahe-Sukh-Ho
+            </p>
+        </div>
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+
+</html>
